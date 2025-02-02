@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Example</title>
+  </head>
+  <body>
+    <h1 id="header">Hello, World!</h1>
+    <button onclick="changeHeader()">Change Header</button>
+    <button onclick="changeHeaderWorld()">Change Header World</button>
+    <button onclick="changeHeaderBoth()">Change Header World</button>
+    <script>
+      function changeHeader() {
+        // Accede al elemento con id 'header'
+        const header = document.getElementById("header");
+        // Cambia el contenido de texto del elemento
+        header.textContent = "Hello, DOM!";
+        // Cambia el color del texto
+        header.style.color = "blue";
+      }
+
+      function changeHeaderWorld() {
+        // Accede al elemento con id 'header'
+        const header = document.getElementById("header");
+        // Cambia el contenido de texto del elemento
+        header.textContent = "Hello, World!";
+        // Cambia el color del texto
+        header.style.color = "black";
+      }
+
+      function changeHeaderBoth() {
+        // Accede al elemento con id 'header'
+        const header = document.getElementById("header");
+        // Cambia el contenido de texto del elemento
+        header.textContent = "Hello, World! And Hello, DOM!";
+        // Cambia el color del texto
+        header.style.color = "red";
+      }
+    </script>
+  </body>
+</html>
